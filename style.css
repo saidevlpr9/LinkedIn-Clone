@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
         body{
+            margin: 0;
             width: fit-content;
             margin: auto;
             background: rgb(235, 235, 235);
@@ -581,10 +582,9 @@
         text-align: right;
         }
 
-       
-            header {
+        @media only screen and (max-width: 600px){
+            .header {
                 width: 100%;
-                padding: 10px 2%;
             }
             
             .sidebar,
@@ -602,8 +602,11 @@
             .input-box{
                 width: 15px !important;
             }
+            header{
+                padding: 10px 2%;
+            }
             nav{
-                justify-content: space-around;
+             justify-content: space-around;
             }
             .nav-right{
                 gap: 20px;
@@ -617,3 +620,4 @@
             .nav-right a{
                 justify-content: space-around;
             }
+        }
